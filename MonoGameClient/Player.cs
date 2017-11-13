@@ -86,7 +86,7 @@ namespace Sprites
             SpriteImage = _textures[(int)_direction];
             // Update internal player data for messages
             oldPosition = playerData.playerPosition;
-            playerData = new PlayerData { playerPosition = new Position { X = (int)Position.X, Y = (int)Position.Y } };
+            playerData.playerPosition = new Position { X = (int)Position.X, Y = (int)Position.Y };
             
         }
     }
